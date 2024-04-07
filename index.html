@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Background Image Page</title>
+<title>Happy Birthday</title>
+<link rel="icon" type="images/x-icon" href="https://i.postimg.cc/fWjPCpMC/images.jpg" />
 <style>
     body {
         margin: 0;
@@ -35,7 +36,7 @@
     }
     .birthday-paragraph {
         position: absolute;
-        top: calc(20% + 50px); /* Adjusted top position to position two lines below the heading */
+        top: calc(20% + 90px); /* Adjusted top position to position two lines below the heading */
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 18px;
@@ -45,8 +46,22 @@
 </style>
 </head>
 <body>
-    <img src="https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg" class="overlay-image" alt="Overlay Image">
-    <div class="birthday-text">Happy Birthday Vineet</div>
-    <p class="birthday-paragraph">Happy Birthday to my extraordinary friend! As you add another candle to your cake, I want you to know how much you mean to me. Your kindness, humor, and unwavering support make every day brighter. Today is all about celebrating you and the incredible person you are. Here's to another year of adventures, laughter, and cherished moments together. May your birthday be filled with love, joy, and all the happiness in the world. Cheers to you, my dear friend, and to the wonderful journey ahead.</p>
+    <script>
+        // Prompt to ask for the code
+        var code = prompt("Please enter the code to unlock the page:");
+
+        // Check if the entered code matches "1016"
+        if (code === "1016") {
+            // Code matches, display the page content
+            document.write(`
+                <img src="https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg" class="overlay-image" alt="Overlay Image">
+                <div class="birthday-text">Happy Birthday Vineet</div>
+                <p class="birthday-paragraph">Happy Birthday to my extraordinary friend! As you add another candle to your cake, I want you to know how much you mean to me. Your kindness, humor, and unwavering support make every day brighter. Today is all about celebrating you and the incredible person you are. Here's to another year of adventures, laughter, and cherished moments together. May your birthday be filled with love, joy, and all the happiness in the world. Cheers to you, my dear friend, and to the wonderful journey ahead.</p>
+            `);
+        } else {
+            // Code doesn't match, inform the user
+            alert("Incorrect code. You do not have access to view this page.");
+        }
+    </script>
 </body>
 </html>
