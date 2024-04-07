@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Image Page</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        height: 100vh;
+        font-family: 'Comic Sans MS', cursive;
+        color: white;
+        text-align: center;
+    }
+    .birthday-text {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 48px;
+        font-weight: bold;
+        z-index: 1;
+    }
+    .overlay-image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    .birthday-paragraph {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        max-width: 80%;
+        line-height: 1.5;
+    }
+</style>
+</head>
+<body>
+    <img src="https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg" class="overlay-image" alt="Overlay Image">
+    <div class="birthday-text">Happy Birthday Vineet</div>
+    <p class="birthday-paragraph">Happy Birthday to my extraordinary friend! As you add another candle to your cake, I want you to know how much you mean to me. Your kindness, humor, and unwavering support make every day brighter. Today is all about celebrating you and the incredible person you are. Here's to another year of adventures, laughter, and cherished moments together. May your birthday be filled with love, joy, and all the happiness in the world. Cheers to you, my dear friend, and to the wonderful journey ahead.</p>
+</body>
+</html>
