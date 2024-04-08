@@ -16,7 +16,7 @@
         position: relative;
         height: 100vh;
         font-family: 'Comic Sans MS', cursive;
-        color: white;
+        color: #CBC3E3;
         text-align: center;
     }
     .birthday-text {
@@ -24,9 +24,10 @@
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 48px;
+        font-size: 75px;
         font-weight: bold;
         z-index: 1;
+        color: #FFD700;
     }
     .overlay-image {
         width: 100%;
@@ -43,24 +44,37 @@
         max-width: 80%;
         line-height: 1.5;
     }
+    .additional-content {
+        position: absolute;
+        top: calc(20% + 90px + 90px); /* Just below the birthday paragraph with a little spacing */
+        left: 50%;
+        transform: translateX(-50%);
+        color: #FF8C00;
+    }
+    /* Styling for the hyperlink */
+    .additional-content a {
+        color: lightblue;
+    }
 </style>
 </head>
 <body>
+    <div class="birthday-text">Happy Birthday Nandini</div>
+    <img src="https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg" class="overlay-image" alt="Overlay Image">
+    <p class="birthday-paragraph">Normal msg h padh skti ho.Bs birthday wish krna tha.Tmhare bday me bs dp dalna thoda rude ho jata isliye ye webpage :) .Hm bhut soche wish na kre but ni ho paya.Kuch smjh ni aa rha aur kya likhe just stay happy aur postive rho hmesha.Bhut kuch chal rha h still hm birthday ko sperate rkhna chte the.Hm call pe wish ni kr payege.Tmhare bday ke din hm ni chte hm tumse rudely bat kre isliye please call mat krna.Tm msg dekhli kafi h.Bs ek connect abhi b feel hota tmsr iske against ni ja skte hm so wish krna zaruri tha.Also, I know tm mere se shyd kuch gift na lo but atleast apne birthday pe tm mandir jaogi to you can feed someone there.</p>
+    <div class="additional-content">
+        <p>To ye Amazon gift card voucher h to amazon pay me add kr lena.</p>
+        <p>CODE: YEP4-A877BX-YBYB</p>
+        <a href="https://www.amazon.in/g/KLJEIQ6RC7DQA2DV?ref=gc_utyp" target="_blank">Amazon Gift Card Link</a>
+    </div>
     <script>
         // Prompt to ask for the code
         var code = prompt("Please enter the code to unlock the page:");
 
         // Check if the entered code matches "1016"
-        if (code === "1016") {
-            // Code matches, display the page content
-            document.write(`
-                <img src="https://i.postimg.cc/mZYmPBHw/annie-spratt-u9sk-Eqys-M1g-unsplash.jpg" class="overlay-image" alt="Overlay Image">
-                <div class="birthday-text">Happy Birthday Vineet</div>
-                <p class="birthday-paragraph">Happy Birthday to my extraordinary friend! As you add another candle to your cake, I want you to know how much you mean to me. Your kindness, humor, and unwavering support make every day brighter. Today is all about celebrating you and the incredible person you are. Here's to another year of adventures, laughter, and cherished moments together. May your birthday be filled with love, joy, and all the happiness in the world. Cheers to you, my dear friend, and to the wonderful journey ahead.</p>
-            `);
-        } else {
-            // Code doesn't match, inform the user
+        if (code !== "1016") {
+            // Code doesn't match, inform the user and redirect to another page
             alert("Incorrect code. You do not have access to view this page.");
+            window.location.href = "https://www.example.com"; // Replace "https://www.example.com" with your desired URL
         }
     </script>
 </body>
