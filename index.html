@@ -21,13 +21,14 @@
     }
     .birthday-text {
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 75px;
         font-weight: bold;
         z-index: 1;
         color: #FFD700;
+		  
     }
     .overlay-image {
         width: 100%;
@@ -46,7 +47,7 @@
     }
     .additional-content {
         position: absolute;
-        top: calc(20% + 90px + 90px); /* Just below the birthday paragraph with a little spacing */
+        top: calc(25% + 90px + 90px); /* Just below the birthday paragraph with a little spacing */
         left: 50%;
         transform: translateX(-50%);
         color: #FF8C00;
@@ -55,15 +56,16 @@
     .additional-content a {
         color: lightblue;
     }
-
-    /* Media query for smaller devices */
-    @media only screen and (max-width: 600px) {
-        .birthday-text {
-            font-size: 50px;
-        }
-        .birthday-paragraph {
-            font-size: 16px;
-        }
+	 
+	 @media screen and (max-width: 768px) {
+    .birthday-text {
+        font-size: 8vw; /* Adjusted font size for smaller screens */
+    }
+    .birthday-paragraph {
+        font-size: 2vw; /* Adjusted font size for smaller screens */
+    }
+    .additional-content {
+        font-size: 1.5vw; /* Adjusted font size for smaller screens */
     }
 </style>
 </head>
